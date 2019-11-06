@@ -19,7 +19,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-inverse border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-dark border-bottom box-shadow mb-3">     <!-- add fixed-top class to fix navbar to top of page -->
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FoodNavBar</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -29,13 +29,26 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT A ROUTE HERE]">Shopping List?</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Shopping List?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT A ROUTE HERE]">Recipes?</a>
+                            <a class="nav-link text-light" asp-area="" asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Something other thing idk</a>
+                        </li>
+                        <!-- trial dropdown, may not work -->
+                        <li class="dropdown">
+                            <a class="nav-link text-light dropdown-toggle" data-toggle="dropdown">All Recipes</a>
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe1</a></li>
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe2</a></li>
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe3</a></li>
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe4</a></li>
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe5</a></li>
+                                <li><a asp-controller="[PUT CONTROLLER HERE]" asp-action="[PUT ROUTE HERE]">Recipe6</a></li>
+                            </ul>
                         </li>
                     </ul>
                 </div>
